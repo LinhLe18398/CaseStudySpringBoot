@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Booking</title>
+</head>
+<body>
+<div>
+  <a th:href="@{/booking}"></a>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>UserName</th>
+      <th>ServiceName</th>
+      <th>Status</th>
+      <th>Time</th>
+    </tr>
+    <tr th:each="row : ${listBooking}">
+      <td th:text="${row.id}"></td>
+      <td th:text="${row.getUser().getName()}"></td>
+      <td th:text="${row.getService().getName()}"></td>
+      <td th:text="${row.getStatus()}"></td>
+      <td th:text="${row.getTime()}"></td>
+    </tr>
+  </table>
+  <a th:href="@{/admin}">back</a>
+</div>
+</body>
+</html>
