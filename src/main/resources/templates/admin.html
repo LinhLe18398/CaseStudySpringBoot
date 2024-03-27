@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/admin-style.css}">
+    <title>ADMIN BARBER SHOP</title>
+</head>
+<body>
+<section id="menu">
+    <div class="logo">
+        <h2>BarberShop</h2>
+    </div>
+    <div class="items">
+        <li><i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a></li>
+        <li><i class="fa-brands fa-uikit"></i><a href="#">UI Element</a></li>
+        <li><i class="fa-solid fa-table-list"></i><a href="#">Tabels</a></i></li>
+        <li><i class="fa-solid fa-pen-to-square"></i><a href="#">Forms</a></li>
+        <li><i class="fa-brands fa-cc-visa"></i><a href="#">Cards</a></li>
+        <li><i class="fa-solid fa-burger"></i><a href="#">Modal</a></li>
+        <li><i class="fa-solid fa-chart-line"></i><a href="#">Blank</a></li>
+    </div>
+</section>
+<section id="interface">
+    <div class="navigation">
+        <div class="n1">
+            <div>
+                <i id="menu-btn" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="search" placeholder="Search">
+            </div>
+        </div>
+        <div class="profile">
+            <i class="fa-solid fa-bell"></i>
+            <img src="img/avata-default.png" alt="avata">
+        </div>
+    </div>
+    <h3 class="i-name">
+        Dashboard
+    </h3>
+    <div class="values">
+        <div class="val-box">
+            <i class="fa-solid fa-users"></i>
+            <div>
+                <h3>9999+</h3>
+                <span>Users</span>
+            </div>
+        </div>
+        <div class="val-box">
+            <i class="fa-solid fa-users"></i>
+            <div>
+                <h3>20</h3>
+                <span>Employees</span>
+            </div>
+        </div>
+        <div class="val-box">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div>
+                <h3>9999+</h3>
+                <span>Bills</span>
+            </div>
+        </div>
+        <div class="val-box">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <div>
+                <h3>9999+</h3>
+                <span>revenue</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="board">
+        <table>
+            <thead>
+            <tr>
+                <td>Name</td>
+                <td>Title</td>
+                <td>Status</td>
+                <td>Role</td>
+                <td></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="people">
+                    <img src="img/avata-default.png" alt="">
+                    <div class="people-de">
+                        <h5>John Doe</h5>
+                        <p>john@example.com</p>
+                    </div>
+                </td>
+
+                <td class="people-des">
+                    <h5>Sofware Engineer</h5>
+                    <p>Web dev</p>
+                </td>
+
+                <td class="active">
+                    <p>Active</p>
+                </td>
+
+                <td class="role">
+                    <p>Owner</p>
+                </td>
+
+                <td class="edit">
+                    <a href="#">Edit</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+<script th:src="@{https://code.jquery.com/jquery-3.7.1.min.js}"></script>
+<script>
+    $('#menu-btn').click(function(){
+        $('#menu').toggleClass("active");
+    })
+</script>
+</html>
