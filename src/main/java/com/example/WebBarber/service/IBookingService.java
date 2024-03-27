@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IBookingService {
-    //    public void bookService(int id, int user_Id, String status, Date time);
     Iterable<Booking> findAll();
 
     Optional<Booking> findById(int id);

@@ -1,10 +1,9 @@
 package com.example.WebBarber.service;
 
-import com.example.WebBarber.model.Booking;
 import com.example.WebBarber.model.Service;
 import org.springframework.data.domain.Page;
 
-import java.awt.print.Pageable;
+import org.springframework.data.domain.Pageable;
 import java.util.List;
 import java.util.Optional;
 
